@@ -9,9 +9,6 @@ body {
 #canvas {
     max-width: 100vw;
     max-height: 100vh;
-    width: auto; /* Ensures width adjusts based on height */
-    height: auto; /* Ensures height adjusts based on width */
-    margin: auto; /* Center if needed */
 }
 
 #hud {

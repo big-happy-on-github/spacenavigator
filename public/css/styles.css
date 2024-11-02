@@ -6,6 +6,10 @@ body {
     background-attachment: fixed; /* Makes the background stay fixed during scrolling */
 }
 
+main {
+    margin: auto;
+}
+
 #canvas {
     width: 932px;
     height: 932px;

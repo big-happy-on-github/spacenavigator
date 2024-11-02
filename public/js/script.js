@@ -13,7 +13,7 @@ const rocket = {
 
 // Meteor properties
 const meteors = [];
-const meteorFrequency = 60; // Frames between new meteor spawn
+let meteorFrequency = 60; // Frames between new meteor spawn
 let frame = 0;
 let score = 0;
 let gameOver = false;

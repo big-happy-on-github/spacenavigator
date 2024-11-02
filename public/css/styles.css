@@ -1,9 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0; /* Remove default margin */
-    overflow: hidden; /* Prevent scrolling if that's the desired outcome */
-}
-
 body {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bf/Webb%27s_First_Deep_Field.jpg'); /* URL of your background image */
     background-size: cover; /* Ensures the image covers the entire background */
@@ -13,8 +7,8 @@ body {
 }
 
 #canvas {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 #hud {

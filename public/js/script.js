@@ -37,7 +37,7 @@ document.addEventListener("keyup", (e) => {
 function update() {
     if (gameOver) return;
 
-    meteorFrequency -= score;
+    meteorFrequency -= Math.round(0.5*score);
 
     // Move rocket
     rocket.x += rocket.dx;

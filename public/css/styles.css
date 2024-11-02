@@ -6,6 +6,11 @@ body {
     background-attachment: fixed; /* Makes the background stay fixed during scrolling */
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
 #hud {
     position: absolute;
     top: 10px;

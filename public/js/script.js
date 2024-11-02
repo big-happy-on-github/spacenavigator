@@ -1,10 +1,6 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-// Set canvas dimensions
-canvas.width = 400;
-canvas.height = 600;
-
 // Rocket properties
 const rocket = {
     x: canvas.width / 2 - 15,
@@ -17,7 +13,7 @@ const rocket = {
 
 // Meteor properties
 const meteors = [];
-const meteorFrequency = 60; // Frames between new meteor spawn
+const meteorFrequency = 20; // Frames between new meteor spawn
 let frame = 0;
 let score = 0;
 let gameOver = false;

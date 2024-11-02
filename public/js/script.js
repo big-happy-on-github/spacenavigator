@@ -59,7 +59,7 @@ function update() {
     // Move and remove meteors
     for (let i = 0; i < meteors.length; i++) {
         const meteor = meteors[i];
-        meteor.speed += Math.round(0.5*score);
+        meteor.speed += Math.round(0.125*score);
         meteor.y += meteor.speed;
 
         // Check for collision

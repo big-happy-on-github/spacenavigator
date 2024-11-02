@@ -37,8 +37,6 @@ document.addEventListener("keyup", (e) => {
 function update() {
     if (gameOver) return;
 
-    meteorFrequency -= Math.round(0.5*score);
-
     // Move rocket
     rocket.x += rocket.dx;
 
@@ -79,6 +77,7 @@ function update() {
         if (meteor.y > canvas.height) {
             meteors.splice(i, 1);
             score++;
+            meteorFrequency -= 2*score;
         }
     }
 

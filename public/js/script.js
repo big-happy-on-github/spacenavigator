@@ -53,7 +53,7 @@ function update() {
             y: -30,
             width: 30,
             height: 30,
-            speed: 3 + Math.random() * 3
+            speed: 3 + Math.random() * 2
         };
         meteors.push(meteor);
     }

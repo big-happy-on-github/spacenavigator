@@ -4,7 +4,6 @@ body {
     background-repeat: no-repeat; /* Prevents repeating the image */
     background-position: center center; /* Centers the image */
     background-attachment: fixed; /* Makes the background stay fixed during scrolling */
-    overflow: hidden;
 }
 
 #hud {
@@ -14,9 +13,4 @@ body {
     color: #fff;
     display: flex;
     gap: 20px;
-}
-
-#canvas {
-    width: 100%;
-    height: 100%;
 }

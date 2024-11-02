@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 // Rocket properties
 const rocket = {
     x: canvas.width / 2 - 15,
-    y: canvas.height - 60,
+    y: canvas.height - 80,
     width: 30,
     height: 60,
     speed: 5,
@@ -13,7 +13,7 @@ const rocket = {
 
 // Meteor properties
 const meteors = [];
-const meteorFrequency = 20; // Frames between new meteor spawn
+const meteorFrequency = 60; // Frames between new meteor spawn
 let frame = 0;
 let score = 0;
 let gameOver = false;
@@ -36,6 +36,8 @@ document.addEventListener("keyup", (e) => {
 // Update game elements
 function update() {
     if (gameOver) return;
+
+    meteorFrequency -= score;
 
     // Move rocket
     rocket.x += rocket.dx;

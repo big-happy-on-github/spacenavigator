@@ -1,25 +1,54 @@
-body {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bf/Webb%27s_First_Deep_Field.jpg'); /* URL of your background image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+/* styles.css */
+
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Main container styling */
 main {
-    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#canvas {
-    width: 466px;
-    height: 466px;
-}
-
+/* HUD styling */
 #hud {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #fff;
-    display: flex;
-    gap: 20px;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #00ffcc;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Score styling */
+#score {
+    margin: 0;
+}
+
+/* Canvas styling */
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/bf/Webb%27s_First_Deep_Field.jpg'); center center / cover no-repeat;
 }
